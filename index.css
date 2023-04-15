@@ -1,9 +1,18 @@
 @import url(/frontend/assets/styles/styles.css);
 
+@media (prefers-color-scheme: dark) {
+    body { background: #333; color: white; }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    body { background: #ddd; color: black; }
+}
+
 :root {
     --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 62%,5;
 }
+
 
 body {
     font-family: var(--primary-font);
@@ -17,4 +26,13 @@ h1 {
 
 h2 {
     text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.container button {
+    padding: 1rem;
+    border-radius: 1rem;
 }
